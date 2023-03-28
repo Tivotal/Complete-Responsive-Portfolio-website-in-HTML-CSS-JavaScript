@@ -33,6 +33,37 @@ section {
   padding-bottom: 3rem;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  padding: 2rem 5%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  font-size: 3rem;
+  color: #444;
+  cursor: pointer;
+  display: none;
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: #444;
+}
+
+header .navbar a:hover {
+  color: #2200ff;
+}
+
 .btn {
   display: inline-block;
   border-radius: 5rem;
@@ -69,49 +100,6 @@ section {
 .btn:hover::before,
 .btn:hover::after {
   width: 100%;
-}
-
-.heading {
-  text-align: center;
-  padding: 1rem;
-  color: #fff;
-  font-size: 6rem;
-  -webkit-text-stroke: #666 0.1rem;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-  font-weight: bolder;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  background: #fff;
-  padding: 2rem 5%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header .navbar a {
-  font-size: 1.7rem;
-  margin-left: 2rem;
-  color: #444;
-}
-
-header .navbar a:hover {
-  color: #2200ff;
-}
-
-#menu {
-  font-size: 3rem;
-  color: #444;
-  cursor: pointer;
-  display: none;
 }
 
 header .scroll-bar {
@@ -159,6 +147,18 @@ header .scroll-bar {
   font-size: 1.5rem;
   color: #666;
   padding-bottom: 1rem;
+}
+
+.heading {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  font-size: 6rem;
+  -webkit-text-stroke: #666 0.1rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
 .about .row {
